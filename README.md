@@ -33,14 +33,14 @@ The video below shows a live demo of how the web application works.
 * Install all required libraries in vscode 
     * Flask 
     * Pickle 
-    * To link Model with API install pickle library
-        * Anaconda
+ * To link Model with API install pickle library
+    * Anaconda
           save your model after training  as .pkl 
          ```sh
          pickle.dump(algorithm name, open('algorithm name', 'wb'))
         ```
           
-        * API 
+     * API 
         link your model.pkl with api 
          ```sh
          model_algorithm name =pickle.load(open('Path of the model on your PC' ,'rb'))
