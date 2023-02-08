@@ -116,3 +116,13 @@ Each feature contains answers in the Scale that we use:
 
 * Fully disagree
 
+## Team behind this piece of art
+
+- [Shimaa Mohamed ](https://github.com/shimaamhmd)
+- [Alyaa Mamoon](https://github.com/alyaa999)
+- [Sama Mohamed Abdelmohsen](https://github.com/Samaamhmd)
+- [Jamela Ahmed ](https://github.com/Jameeelaahmed)
+- [Aya Abdelkhalk Ahmed](https://github.com/AyaAbdelkhalk)
+
+
+
