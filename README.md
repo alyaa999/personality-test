@@ -10,8 +10,8 @@ The predictive analysis of personality assessments provides an overview of a can
 * [Background](#background)
 * [Components of the Application](#components-of-the-application)
 * [Personality Test](#personality-test)
-* [Dataset Description](#Dataset Description)
-* [Team behind this piece of art](#Team behind this piece of art)
+* [Dataset Description](#dataset-description)
+* [Team behind this piece of art](#team-behind-this-piece-of-art)
 
 ## Demo 
 
