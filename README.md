@@ -78,7 +78,7 @@ The MBTI personality classification system grew out of Jungian psychoanalytic ps
 
 
 * Choose Your Model (sub.html)
-![Login](https://github.com/alyaa999/personality-test/blob/main/Untitled2.png)
+![Choose Your Model](https://github.com/alyaa999/personality-test/blob/main/Untitled2.png)
 
 
 * famous person match with your personality (final.html)
