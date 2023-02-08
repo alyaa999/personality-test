@@ -1,0 +1,54 @@
+import os
+import pandas as pd
+import numpy as np
+import seaborn as sns
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn import  datasets , linear_model 
+from sklearn import metrics
+from sklearn.linear_model import LogisticRegression
+import sklearn.model_selection as model_selection
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import f1_score
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
+
+
+def  model_prediction(items) :
+        train_data=pd.read_csv('P.csv',encoding='cp1252')
+        train_data=train_data.drop(columns={'Response Id'})
+        train_data.head()
+        # splitting dataframe by row index 
+        # take  first 1000 rows in your data instead of all dataset
+        train_data = train_data.iloc[:1000,:]
+
+
+        X=train_data.drop(columns="Personality")
+        y=train_data["Personality"]
+        X = StandardScaler().fit_transform(X)
+
+        pca = PCA(n_components=21)
+        principalComponents = pca.fit_transform(X)
+        principalDf = pd.DataFrame(data = principalComponents
+                , columns = ['pc1', 'pc2','pc3','pc4','pc5','pc6','pc7','pc8','pc9','pc10','pc11','pc12','pc13','pc14','pc15','pc16','pc17','pc18','pc19','pc20','pc21'])
+        finalDf = pd.concat([principalDf, train_data[['Personality']]], axis = 1)
+
+        train_x, test_x, train_y, test_y = train_test_split(
+              finalDf.drop(columns="Personality"), finalDf["Personality"],train_size=0.100,)
+        items = StandardScaler().fit_transform(items)
+        mul_lr = linear_model.LogisticRegression(multi_class='multinomial', solver= 'newton-cg',max_iter =1000) 
+        mul_lr.fit(train_x, train_y)
+        return mul_lr.predict(items)
+        #from sklearn.metrics import accuracy_score
+        #from sklearn.metrics import classification_report
+        #from sklearn.metrics import confusion_matrix
+        #X_test_prediction = mul_lr.predict(X_test)
+        #test_data_accuracy = accuracy_score(X_test_prediction, Y_test)
+        #print(accuracy_score(Y_test, X_test_prediction))
+        #print("\t=============================================\n")
+        #print(confusion_matrix(Y_test, X_test_prediction))
+        #print("\t=============================================\n")
+        #print(classification_report(Y_test, X_test_prediction))
+        
+       
+
