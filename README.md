@@ -44,6 +44,9 @@ The video below shows a live demo of how the web application works.
          model_algorithm name =pickle.load(open('Path of the model on your PC' ,'rb'))
         ```
 * Now run the api file that called  app.py.
+* Make your answers 
+* Choose Algorithm to predict your presonality
+* result will appear on screen 
 
 
 ## Background 
