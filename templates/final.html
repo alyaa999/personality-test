@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submit</title>
+</head>
+<style>
+    body {
+        background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  /* Keep the inherited background full size. */
+  background-attachment: fixed; 
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 40rem;
+  height: 50rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+}
+
+.container:before {
+  content: "image.png";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);
+  margin: -20px;
+}
+</style>
+<body bgcolor=#bca0dc> 
+    <div class="container">
+    <center>
+    <h1>  PREDICTION :  </h1>
+    <!---1-->
+    {% if mymarks =='INTJ'%}
+    <img src="{{url_for('static', filename='INTJ.jpeg')}}" align="middle" />
+    <p> your presonality</p>
+    {{mymarks}}
+    <!---2-->
+    {% elif mymarks == 'INFP'%}
+    <img src="{{url_for('static', filename='INFP.jpeg')}}" align="middle" />
+    <p> your presonality</p>
+    {{mymarks}}
+    <!---3-->
+    {% elif mymarks == 'INFJ'%}
+    <img src="{{url_for('static', filename='INFJ.jpeg')}}" align="middle" />
+    <p> your presonality</p>
+    {{mymarks}}
+    <!---4-->
+    {% elif mymarks == 'ENFJ'%}
+    <img src="{{url_for('static', filename='ENFJ.jpeg')}}" align="middle" />
+    <p> your presonality</p>
+    {{mymarks}}
+    <!---5-->
+    {% elif mymarks == 'ENFP'%}
+    <img src="{{url_for('static', filename='ENFP.jpeg')}}" align="middle" />
+    <p> your presonality</p>
+    {{mymarks}}
+    <!---6-->
+    {% elif mymarks == 'INTJ'%}
+    <img src="{{url_for('static', filename='INTJ.jpeg')}}" align="middle" />
+    <p> your presonality</p>
+    {{mymarks}}
+     <!---7-->
+     {% elif mymarks == 'ISFP'%}
+     <img src="{{url_for('static', filename='ISFP.jpeg')}}" align="middle" />
+     <p> your presonality</p>
+     {{mymarks}}
+    <!---8-->
+    {% elif mymarks == 'ISTP'%}
+    <img src="{{url_for('static', filename='ISTP.jpeg')}}" align="middle" />
+    <p> your presonality</p>
+    {{mymarks}}
+    <!---9-->
+    {% elif mymarks == 'ISFJ'%}
+    <img src="{{url_for('static', filename='ISFJ.jpeg')}}" align="middle" />
+    <p> your presonality</p>
+    {{mymarks}}
+    <!---10-->
+    {% elif mymarks == 'ENTP'%}
+    <img src="{{url_for('static', filename='ENTP.jpeg')}}" align="middle" />
+    <p> your presonality</p>
+    {{mymarks}}
+     <!---11-->
+     {% elif mymarks == 'ESTP'%}
+     <img src="{{url_for('static', filename='ESTP.jpg')}}" align="middle" />
+     <p> your presonality</p>
+     {{mymarks}}
+      <!---12-->
+    {% elif mymarks == 'INTP'%}
+    <img src="{{url_for('static', filename='INTP.jpg')}}" align="middle" />
+    <p> your presonality</p>
+    {{mymarks}}
+     <!---13-->
+     {% elif mymarks == 'ENTJ'%}
+     <img src="{{url_for('static', filename='ENTJ.jpg')}}" align="middle" />
+     <p> your presonality</p>
+     {{mymarks}}
+     <!---14-->
+     {% elif mymarks == 'ESTJ'%}
+     <img src="{{url_for('static', filename='ESTJ.jpg')}}" align="middle" />
+     <p> your presonality</p>
+     {{mymarks}}
+     <!---15-->
+     {% elif mymarks == 'ISTJ'%}
+     <img src="{{url_for('static', filename='ISTJ.jpg')}}" align="middle" />
+     <p> your presonality</p>
+     {{mymarks}}
+     <!---16-->
+     {% elif mymarks == 'ESFJ'%}
+     <img src="{{url_for('static', filename='ESFJ.jpg')}}" align="middle" />
+     <p> your presonality</p>
+     {{mymarks}}
+     
+    {%endif%}
+    <br><br>
+    <a href='/'>go back to home page</a>
+
+    </center>
+</div>
+</body>
+</html>
