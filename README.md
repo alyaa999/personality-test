@@ -22,7 +22,7 @@ The video below shows a live demo of how the web application works.
 
 ## Instructions
 
-* Clone the [repository](#installation)
+* Clone the [repository](https://github.com/alyaa999/personality-test.git)
 * Install  Visual Studio Code
 * Install Anaconda
 * Install all required libraries in Aanconda
