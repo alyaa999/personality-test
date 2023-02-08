@@ -38,13 +38,11 @@ The video below shows a live demo of how the web application works.
           save your model after training  as .pkl 
          ```sh
          pickle.dump(algorithm name, open('algorithm name', 'wb'))
-        ```
-          
+        ```  
      * API 
         link your model.pkl with api 
          ```sh
          model_algorithm name =pickle.load(open('Path of the model on your PC' ,'rb'))
         ```
-        
 * Now run the api file that called  app.py.
 
