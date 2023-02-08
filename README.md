@@ -77,12 +77,12 @@ The MBTI personality classification system grew out of Jungian psychoanalytic ps
 
 
 * Choose Your Model (sub.html)
-![Login](https://github.com/philkam/AI_Personality-Prediction-System-Through-CV-Analysis/blob/main/Readme_images/login.jpg)
+![Login](https://github.com/alyaa999/personality-test/blob/main/Untitled2.png)
 
 
 * famous person match with your personality (final.html)
 
-![famous person match with your personality](https://github.com/philkam/AI_Personality-Prediction-System-Through-CV-Analysis/blob/main/Readme_images/qpage.jpg)
+![famous person match with your personality](https://github.com/alyaa999/personality-test/blob/main/Untitled3.png)
 
 
 
