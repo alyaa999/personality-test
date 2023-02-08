@@ -9,16 +9,34 @@ The predictive analysis of personality assessments provides an overview of a can
 * [Prerequisites & Development Libraries](#prerequisites-development-libraries)
 * [Installation](#installation)
 * [Instructions](#instructions)
-* [Demo](#demo)
 * [Background](#background)
 * [Components of the Application](#components-of-the-application)
-* [Aptitude Assessment](#aptitude-assessment)
 * [Personality Test](#personality-test)
-* [CV Analysis](#cv-analysis)
-* [Disclaimer](#disclaimer)
+*
 
 ## Demo 
 
 The video below shows a live demo of how the web application works.
 
 [Presonality Test  Video](https://drive.google.com/file/d/1vK57Axwk87LRR92NywPguKGldwTPefnm/view?usp=sharing)
+
+
+
+## Instructions
+
+* Clone the [repository](#installation)
+* Install  Visual Studio Code
+* Install Anaconda
+* Install all required libraries in Aanconda
+    * Matplotlib.pyplot
+    * Catboost
+* Install all required libraries in vscode 
+    * Flask 
+    * Pickle 
+    * To link Model with API install pickle library
+        * Anaconda
+           * pickle.dump(algorithm name, open('algorithm name', 'wb'))
+        * API 
+           * model_algorithm name =pickle.load(open('Path of the model on your PC' ,'rb'))
+* Now run the api file that called  app.py.
+
