@@ -46,7 +46,7 @@ The video below shows a live demo of how the web application works.
 * Now run the api file that called  app.py.
 * Make your answers 
 * Choose Algorithm to predict your presonality
-* result will appear on screen 
+* Result will appear on screen 
 
 
 ## Background 
