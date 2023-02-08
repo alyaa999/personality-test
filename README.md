@@ -121,7 +121,7 @@ Each feature contains answers in the Scale that we use:
 
 - [Jamela Ahmed ](https://github.com/Jameeelaahmed)
 - [Aya Abdelkhalk Ahmed](https://github.com/AyaAbdelkhalk)
-- [Shimaa Mohamed ](https://github.com/shimaamhmd)
+- [Shimaa Mohamed Taky](https://github.com/shimaamhmd)
 - [Sama Mohamed Abdelmohsen](https://github.com/Samaamhmd)
 - [Alyaa Mamoon](https://github.com/alyaa999)
 
